@@ -1,0 +1,268 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; 
+  background-color: dimgray;
+  gap:10px;
+  color: white;
+  padding: 10px;
+  margin: 0px 0px 10px -8px;
+  height: 100px;
+}
+
+.header-item:nth-of-type(1){
+  align-items: flex-end;
+  margin-right: 10px;
+}
+.header-button{
+  width: auto; 
+  height: auto;
+  text-align: center;
+  font-size: 15px;
+  color: darkred;
+  background-color: cornsilk;
+  padding-right: 10px;
+  padding: 10px;
+  margin: 15px 10px 5px 0px;
+  border: 1px outset brown;
+  border-radius: 5px;
+  cursor: pointer; 
+}
+
+/* Add style to button */
+#theme-button {
+  width: auto; 
+  height: auto; 
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+  text-align: center;
+  color: darkred;
+  background-color: white;
+  padding: 10px; 
+  margin: 5px 20px 5px 0px;
+  border: 5px;
+  cursor: pointer;
+}
+
+/* Customize Dark Mode Theme */
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+body {
+    font-family: Arial, sans-serif; color: brown;
+    font-size: 16px;  
+    background-color: cornsilk;
+    padding: 0;
+    margin: 0px 0px 0px 8px;
+}
+
+h1 {
+    margin: 10px;    
+}
+
+h2{
+  text-align: center;
+}
+
+h3 {
+  text-align: left;  
+}
+
+h4{
+  color: forestgreen;
+  padding-left: 10px;
+}
+
+.petition-container{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  padding-bottom: 20px;
+}
+.petition-para{
+  width: 55%;
+  padding-right: 10px;
+}
+.signatures{
+  width: 45%;
+  padding-right: 10px;
+}
+#sign-petition{
+  padding: 10px;
+  margin-left: 20px;
+}
+#petition-body{
+  margin-left: 20px;  
+  width: 600px;
+}
+#sign-now-button{
+  padding: 8px;
+  margin: 5px 0px 5px 10px;
+  border: 1px solid brown;
+  border-radius: 10px;
+  cursor: pointer; 
+}
+input{
+  line-height: 25px;   /*For input field, it's better to use line-height*/
+}
+
+p{
+  text-align: left;
+  width: 1000px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  color: darkolivegreen;
+}
+a {
+  padding-left: 10px;
+}
+a:link {
+  color: blue;
+}
+a:visited {
+  color: rosybrown;
+}
+a:hover {
+  color: red;
+  font-weight: bold;
+}
+a:active {
+  color: green;
+}
+
+.navbar {
+  width: 290px;
+}
+.navbar ul {
+  list-style: none;
+  overflow: hidden;
+  position: fixed;
+  z-index: 1;
+}
+.navbar ul li {
+  float:left;
+  margin:10px;
+}
+.navbar ul li a {
+  font-family: Arial;
+  font-size: 16px;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color:darkorange;
+}
+.navbar ul li a:hover {
+  background-color: bisque;
+  font-weight: bold;
+}
+
+li{
+  color: darkolivegreen;
+}
+img {
+  padding:0%;
+  height: 250px;
+  width: 350px;
+  display: block; 
+  margin: auto;
+}
+
+figcaption{
+  color: darkslategray;
+  font-size: 14px;
+  font-family: serif;
+  text-align: center;
+}
+
+/* the modal that covers the background and prevents user interactions */
+.modal {
+  display: none; /* hides the modal from view by default*/
+  position: fixed; /* keeps the modal in one place */
+  z-index: 2; /* positions the modal on top of all other elements on the screen */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0,0,0,0.4); /* 40% opacity black - other elements can still be seen */
+  flex-direction: column; /* these flexbox rules center the content on the screen */
+  align-items: center;
+  justify-content: center;
+}
+
+/* box that contains all the content and images */
+.modal-content {
+  background-color: lightsteelblue; 
+  color: black;
+  text-align: center;
+  font-size: 3rem;
+  display: flex; /* adds flexbox to center all items */
+  justify-content: center;
+  align-items: center;
+}
+
+#thanks-modal-content {
+  width: 20rem; /* sets a default width for the text container */
+}
+
+#modal-text-container {
+  display: flex; /* adds flexbox to center the text and buttons (stretch feature) */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#close-thanks-modal{
+  width: auto; 
+  height: auto;
+  background-color: cornsilk;
+  padding: 10px;
+  margin: 15px 10px 40px 0px;
+  border: 5px;
+  cursor: pointer; 
+}
+
+.videos{
+  justify-content: center;
+  padding-left: 10px;
+  width: auto;
+  height:auto 
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: burlywood;
+    text-align: center;
+    color:darkgreen;
+    font-size: 15px;
+    padding: 10px ;
+}
+
+.error {
+  border-style: solid;
+  border-width: 2px;
+  border-color: red;
+  background:pink;
+}
+
+.revealable {  
+  opacity: 0;
+  position : relative;
+  transform : translateY(150px);
+  transition : all 2s ease;
+}
+
+.active {
+  transform : translateY(0px);;
+  opacity: 1;
+}
